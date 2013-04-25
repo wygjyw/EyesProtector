@@ -26,6 +26,19 @@
     [_statusItem setTitle:@""];
     [_statusItem setLength:26.0];
     [_statusItem setImage:[NSImage imageNamed:@"logo_small"]];
+    
+    // set menu item
+    BOOL initStatus = YES;
+    [_startMenuItem setEnabled:initStatus];
+    [_stopMenuItem setEnabled:!initStatus];
+}
+
+- (IBAction)startSSTimer:(id)sender
+{
+}
+
+- (IBAction)stopSSTimer:(id)sender
+{
 }
 
 @end

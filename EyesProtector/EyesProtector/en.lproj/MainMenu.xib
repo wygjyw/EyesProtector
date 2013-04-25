@@ -34,48 +34,51 @@
 			<object class="NSCustomObject" id="1050">
 				<string key="NSClassName">NSApplication</string>
 			</object>
-			<object class="NSMenu" id="658064204">
+			<object class="NSMenu" id="761158674">
 				<string key="NSTitle"/>
 				<array class="NSMutableArray" key="NSMenuItems">
-					<object class="NSMenuItem" id="1039731478">
-						<reference key="NSMenu" ref="658064204"/>
+					<object class="NSMenuItem" id="323941189">
+						<reference key="NSMenu" ref="761158674"/>
+						<bool key="NSIsDisabled">YES</bool>
 						<string key="NSTitle">Start</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<object class="NSCustomResource" key="NSOnImage" id="132394170">
+						<object class="NSCustomResource" key="NSOnImage" id="387336455">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuCheckmark</string>
 						</object>
-						<object class="NSCustomResource" key="NSMixedImage" id="764005122">
+						<object class="NSCustomResource" key="NSMixedImage" id="645032012">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
 					</object>
-					<object class="NSMenuItem" id="548095881">
-						<reference key="NSMenu" ref="658064204"/>
+					<object class="NSMenuItem" id="884960568">
+						<reference key="NSMenu" ref="761158674"/>
+						<bool key="NSIsDisabled">YES</bool>
 						<string key="NSTitle">Stop</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="132394170"/>
-						<reference key="NSMixedImage" ref="764005122"/>
+						<reference key="NSOnImage" ref="387336455"/>
+						<reference key="NSMixedImage" ref="645032012"/>
 					</object>
-					<object class="NSMenuItem" id="32766788">
-						<reference key="NSMenu" ref="658064204"/>
+					<object class="NSMenuItem" id="323221472">
+						<reference key="NSMenu" ref="761158674"/>
 						<string key="NSTitle">Preferences...</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="132394170"/>
-						<reference key="NSMixedImage" ref="764005122"/>
+						<reference key="NSOnImage" ref="387336455"/>
+						<reference key="NSMixedImage" ref="645032012"/>
 					</object>
-					<object class="NSMenuItem" id="969246933">
-						<reference key="NSMenu" ref="658064204"/>
+					<object class="NSMenuItem" id="812024799">
+						<reference key="NSMenu" ref="761158674"/>
 						<string key="NSTitle">Quit Eyes Protector</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="132394170"/>
-						<reference key="NSMixedImage" ref="764005122"/>
+						<reference key="NSOnImage" ref="387336455"/>
+						<reference key="NSMixedImage" ref="645032012"/>
 					</object>
 				</array>
+				<bool key="NSNoAutoenable">YES</bool>
 			</object>
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
@@ -110,7 +113,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">terminate:</string>
 						<reference key="source" ref="1050"/>
-						<reference key="destination" ref="969246933"/>
+						<reference key="destination" ref="812024799"/>
 					</object>
 					<int key="connectionID">543</int>
 				</object>
@@ -134,9 +137,49 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">menu</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="658064204"/>
+						<reference key="destination" ref="761158674"/>
 					</object>
 					<int key="connectionID">541</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">startSSTimer:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="323941189"/>
+					</object>
+					<int key="connectionID">544</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">stopSSTimer:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="884960568"/>
+					</object>
+					<int key="connectionID">545</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">_startMenuItem</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="323941189"/>
+					</object>
+					<int key="connectionID">546</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">stopMenuItem</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="884960568"/>
+					</object>
+					<int key="connectionID">547</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">startMenuItem</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="323941189"/>
+					</object>
+					<int key="connectionID">548</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -190,34 +233,34 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">536</int>
-						<reference key="object" ref="658064204"/>
+						<reference key="object" ref="761158674"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="1039731478"/>
-							<reference ref="548095881"/>
-							<reference ref="32766788"/>
-							<reference ref="969246933"/>
+							<reference ref="323941189"/>
+							<reference ref="884960568"/>
+							<reference ref="323221472"/>
+							<reference ref="812024799"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">537</int>
-						<reference key="object" ref="548095881"/>
-						<reference key="parent" ref="658064204"/>
+						<reference key="object" ref="884960568"/>
+						<reference key="parent" ref="761158674"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">538</int>
-						<reference key="object" ref="1039731478"/>
-						<reference key="parent" ref="658064204"/>
+						<reference key="object" ref="323941189"/>
+						<reference key="parent" ref="761158674"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">539</int>
-						<reference key="object" ref="32766788"/>
-						<reference key="parent" ref="658064204"/>
+						<reference key="object" ref="323221472"/>
+						<reference key="parent" ref="761158674"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">540</int>
-						<reference key="object" ref="969246933"/>
-						<reference key="parent" ref="658064204"/>
+						<reference key="object" ref="812024799"/>
+						<reference key="parent" ref="761158674"/>
 					</object>
 				</array>
 			</object>
@@ -241,32 +284,45 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">543</int>
+			<int key="maxID">548</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">wygjywAppDelegate</string>
 					<string key="superclassName">NSObject</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">quitApp:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">quitApp:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">quitApp:</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="startSSTimer:">id</string>
+						<string key="stopSSTimer:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="startSSTimer:">
+							<string key="name">startSSTimer:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+						<object class="IBActionInfo" key="stopSSTimer:">
+							<string key="name">stopSSTimer:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="menu">NSMenu</string>
+						<string key="startMenuItem">NSMenuItem</string>
+						<string key="stopMenuItem">NSMenuItem</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="menu">
 							<string key="name">menu</string>
 							<string key="candidateClassName">NSMenu</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="startMenuItem">
+							<string key="name">startMenuItem</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="stopMenuItem">
+							<string key="name">stopMenuItem</string>
+							<string key="candidateClassName">NSMenuItem</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="window">
 							<string key="name">window</string>

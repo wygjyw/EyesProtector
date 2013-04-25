@@ -11,9 +11,15 @@
 @interface wygjywAppDelegate : NSObject <NSApplicationDelegate>
 {
     NSStatusItem *_statusItem;
+    __weak NSMenuItem *_startMenuItem;
+    __weak NSMenuItem *_stopMenuItem;
 }
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSMenu *menu;
 @property (retain) NSStatusItem *statusItem;
+- (IBAction)startSSTimer:(id)sender;
+- (IBAction)stopSSTimer:(id)sender;
 
+@property (weak) IBOutlet NSMenuItem *startMenuItem;
+@property (weak) IBOutlet NSMenuItem *stopMenuItem;
 @end
