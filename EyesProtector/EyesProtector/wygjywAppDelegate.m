@@ -15,7 +15,6 @@
 {
     // Insert code here to initialize your application
     [_window close];
-//    [statusItem setImage:[NSImage imageNamed:@"eyeImage.png"]];
 }
 
 -(void)awakeFromNib
@@ -24,7 +23,9 @@
     self.statusItem = [statusBar statusItemWithLength:NSVariableStatusItemLength];
     [_statusItem setHighlightMode:YES];
     [_statusItem setMenu:_menu];
-    [_statusItem setTitle:@"wyg"];
-
+    [_statusItem setTitle:@""];
+    [_statusItem setLength:26.0];
+    [_statusItem setImage:[NSImage imageNamed:@"logo_small"]];
 }
+
 @end

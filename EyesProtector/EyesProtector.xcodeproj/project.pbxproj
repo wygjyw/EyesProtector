@@ -13,7 +13,9 @@
 		242AB345172905BD00587DD1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 242AB343172905BD00587DD1 /* Credits.rtf */; };
 		242AB348172905BD00587DD1 /* wygjywAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 242AB347172905BD00587DD1 /* wygjywAppDelegate.m */; };
 		242AB34B172905BE00587DD1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242AB349172905BE00587DD1 /* MainMenu.xib */; };
-		242AB3521729175900587DD1 /* 1JR414D-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 242AB3511729175900587DD1 /* 1JR414D-0.jpg */; };
+		242AB37C1729257900587DD1 /* logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 242AB373172922DE00587DD1 /* logo_small.png */; };
+		242AB37D1729257900587DD1 /* logo_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 242AB374172922DE00587DD1 /* logo_small@2x.png */; };
+		242AB37E1729257900587DD1 /* logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 242AB375172922DE00587DD1 /* logo.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +32,9 @@
 		242AB346172905BD00587DD1 /* wygjywAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wygjywAppDelegate.h; sourceTree = "<group>"; };
 		242AB347172905BD00587DD1 /* wygjywAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wygjywAppDelegate.m; sourceTree = "<group>"; };
 		242AB34A172905BE00587DD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		242AB3511729175900587DD1 /* 1JR414D-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1JR414D-0.jpg"; sourceTree = "<group>"; };
+		242AB373172922DE00587DD1 /* logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_small.png; path = EyesProtector/logo_small.png; sourceTree = "<group>"; };
+		242AB374172922DE00587DD1 /* logo_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo_small@2x.png"; path = "EyesProtector/logo_small@2x.png"; sourceTree = "<group>"; };
+		242AB375172922DE00587DD1 /* logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = logo.icns; path = EyesProtector/logo.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 		242AB325172905BD00587DD1 = {
 			isa = PBXGroup;
 			children = (
+				242AB37A1729255700587DD1 /* Resources */,
 				242AB33A172905BD00587DD1 /* EyesProtector */,
 				242AB333172905BD00587DD1 /* Frameworks */,
 				242AB331172905BD00587DD1 /* Products */,
@@ -95,7 +100,6 @@
 		242AB33B172905BD00587DD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				242AB3511729175900587DD1 /* 1JR414D-0.jpg */,
 				242AB33C172905BD00587DD1 /* EyesProtector-Info.plist */,
 				242AB33D172905BD00587DD1 /* InfoPlist.strings */,
 				242AB340172905BD00587DD1 /* main.m */,
@@ -103,6 +107,24 @@
 				242AB343172905BD00587DD1 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		242AB37A1729255700587DD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				242AB37B1729256400587DD1 /* LOGO */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		242AB37B1729256400587DD1 /* LOGO */ = {
+			isa = PBXGroup;
+			children = (
+				242AB373172922DE00587DD1 /* logo_small.png */,
+				242AB374172922DE00587DD1 /* logo_small@2x.png */,
+				242AB375172922DE00587DD1 /* logo.icns */,
+			);
+			name = LOGO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +179,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242AB37C1729257900587DD1 /* logo_small.png in Resources */,
+				242AB37D1729257900587DD1 /* logo_small@2x.png in Resources */,
+				242AB37E1729257900587DD1 /* logo.icns in Resources */,
 				242AB33F172905BD00587DD1 /* InfoPlist.strings in Resources */,
 				242AB345172905BD00587DD1 /* Credits.rtf in Resources */,
 				242AB34B172905BE00587DD1 /* MainMenu.xib in Resources */,
-				242AB3521729175900587DD1 /* 1JR414D-0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
