@@ -9,7 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 @interface wygjywAppDelegate : NSObject <NSApplicationDelegate>
-
+{
+    NSStatusItem *_statusItem;
+}
 @property (assign) IBOutlet NSWindow *window;
-
+@property (weak) IBOutlet NSMenu *menu;
+@property (retain) NSStatusItem *statusItem;
 @end
