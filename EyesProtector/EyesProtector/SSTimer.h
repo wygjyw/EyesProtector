@@ -20,12 +20,6 @@
 
 @interface SSTimer : NSObject
 {
-    id<SSTimerDelegate> _delegate;
-    
-@private
-    NSTimer *_timer;
-    NSTimeInterval _timeInterval;
-    NSDate *_refDate;
 }
 
 @property (nonatomic, assign) id<SSTimerDelegate> delegate;

@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+extern NSString * const StartupAtLanuching;
+extern NSString * const SSTime;
+
 @interface PerferencesWnd : NSWindowController
 
 @end

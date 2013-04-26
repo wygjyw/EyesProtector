@@ -15,10 +15,10 @@
 @end
 
 @implementation SSTimer
-@synthesize timer;
-@synthesize refDate;
-@synthesize timeInterval;
-@synthesize delegate;
+@synthesize timer = _timer;
+@synthesize refDate = _refDate;
+@synthesize timeInterval = _timeInterval;
+@synthesize delegate = _delegate;
 
 -(BOOL)isStart
 {

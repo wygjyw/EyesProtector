@@ -12,17 +12,14 @@
 
 @interface wygjywAppDelegate : NSObject <NSApplicationDelegate, SSTimerDelegate>
 {
-    NSStatusItem *_statusItem;
-    __weak NSMenuItem *_startMenuItem;
-    __weak NSMenuItem *_stopMenuItem;
     SSTimer *_ssTimer;
-    PerferencesWnd *_pwnd;
-    
 }
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSMenu *menu;
 @property (retain) NSStatusItem *statusItem;
 @property (nonatomic, retain) PerferencesWnd *pwnd;
+
+
 - (IBAction)startSSTimer:(id)sender;
 - (IBAction)stopSSTimer:(id)sender;
 - (IBAction)perferencesMenuItem:(id)sender;

@@ -8,6 +8,9 @@
 
 #import "PerferencesWnd.h"
 
+NSString * const StartupAtLanuching = @"wygjywStartupAtLanuching";
+NSString * const SSTime = @"wygjywSSTime";
+
 @interface PerferencesWnd ()
 
 @end

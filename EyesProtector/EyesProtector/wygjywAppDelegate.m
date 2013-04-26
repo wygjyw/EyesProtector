@@ -13,9 +13,20 @@
 @synthesize statusItem = _statusItem;
 @synthesize pwnd = _pwnd;
 
+-(void)initPreferencesVal
+{
+    NSMutableDictionary *preDict = [NSMutableDictionary dictionary];
+    [preDict setValue:[NSNumber numberWithBool:YES] forKey:StartupAtLanuching];
+    [preDict setValue:[NSNumber numberWithInt:40] forKey:SSTime];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults registerDefaults:preDict];
+    [[NSUserDefaultsController sharedUserDefaultsController] setInitialValues:preDict];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    [self initPreferencesVal];
     [_window close];
     _ssTimer = [[SSTimer alloc] initWithDelegate:self];
 }
