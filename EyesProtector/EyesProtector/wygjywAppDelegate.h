@@ -7,12 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SSTimer.h"
 
-@interface wygjywAppDelegate : NSObject <NSApplicationDelegate>
+@interface wygjywAppDelegate : NSObject <NSApplicationDelegate, SSTimerDelegate>
 {
     NSStatusItem *_statusItem;
     __weak NSMenuItem *_startMenuItem;
     __weak NSMenuItem *_stopMenuItem;
+    SSTimer *_ssTimer;
+    
 }
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSMenu *menu;
@@ -20,6 +23,9 @@
 - (IBAction)startSSTimer:(id)sender;
 - (IBAction)stopSSTimer:(id)sender;
 
+
 @property (weak) IBOutlet NSMenuItem *startMenuItem;
 @property (weak) IBOutlet NSMenuItem *stopMenuItem;
+
+
 @end

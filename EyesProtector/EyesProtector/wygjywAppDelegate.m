@@ -15,6 +15,7 @@
 {
     // Insert code here to initialize your application
     [_window close];
+    _ssTimer = [[SSTimer alloc] initWithDelegate:self];
 }
 
 -(void)awakeFromNib
@@ -35,9 +36,38 @@
 
 - (IBAction)startSSTimer:(id)sender
 {
+    [_ssTimer start];
 }
 
 - (IBAction)stopSSTimer:(id)sender
+{
+    [_ssTimer stop];
+}
+
+-(void)didStart:(id)sstimer
+{
+    BOOL initStatus = NO;
+    [_startMenuItem setEnabled:initStatus];
+    [_stopMenuItem setEnabled:!initStatus];  
+}
+
+-(void)didPause:(id)sstimer
+{
+}
+
+-(void)didStop:(id)sstimer
+{
+    BOOL initStatus = YES;
+    [_startMenuItem setEnabled:initStatus];
+    [_stopMenuItem setEnabled:!initStatus];
+}
+
+-(void)didChange:(id)sstimer
+{
+    NSLog(@"wyg==>%@", _ssTimer);
+}
+
+-(void)updateStatus
 {
 }
 

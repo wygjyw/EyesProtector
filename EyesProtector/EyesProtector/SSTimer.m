@@ -83,6 +83,7 @@
 {
     if (self = [super init])
     {
+        self.timer = nil;
         self.delegate = nil;
         self.refDate = nil;
         self.timeInterval = 0;
