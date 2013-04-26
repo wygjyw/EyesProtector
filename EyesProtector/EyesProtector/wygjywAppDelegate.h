@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SSTimer.h"
+#import "PerferencesWnd.h"
 
 @interface wygjywAppDelegate : NSObject <NSApplicationDelegate, SSTimerDelegate>
 {
@@ -15,13 +16,16 @@
     __weak NSMenuItem *_startMenuItem;
     __weak NSMenuItem *_stopMenuItem;
     SSTimer *_ssTimer;
+    PerferencesWnd *_pwnd;
     
 }
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSMenu *menu;
 @property (retain) NSStatusItem *statusItem;
+@property (nonatomic, retain) PerferencesWnd *pwnd;
 - (IBAction)startSSTimer:(id)sender;
 - (IBAction)stopSSTimer:(id)sender;
+- (IBAction)perferencesMenuItem:(id)sender;
 
 
 @property (weak) IBOutlet NSMenuItem *startMenuItem;

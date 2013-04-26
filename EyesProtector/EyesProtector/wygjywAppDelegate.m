@@ -7,9 +7,11 @@
 //
 
 #import "wygjywAppDelegate.h"
+#import "PerferencesWnd.h"
 
 @implementation wygjywAppDelegate
 @synthesize statusItem = _statusItem;
+@synthesize pwnd = _pwnd;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -42,6 +44,19 @@
 - (IBAction)stopSSTimer:(id)sender
 {
     [_ssTimer stop];
+}
+
+- (IBAction)perferencesMenuItem:(id)sender
+{
+    if (self.pwnd == nil)
+    {
+        self.pwnd = [[PerferencesWnd alloc] initWithWindowNibName:@"PerferencesWnd"];
+    }
+    if (self.pwnd)
+    {
+        [self.pwnd showWindow:nil];
+        [NSApp activateIgnoringOtherApps:YES];
+    }
 }
 
 -(void)didStart:(id)sstimer
