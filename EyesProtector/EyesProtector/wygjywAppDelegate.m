@@ -18,7 +18,7 @@
 {
     NSMutableDictionary *preDict = [NSMutableDictionary dictionary];
     [preDict setValue:[NSNumber numberWithBool:YES] forKey:StartupAtLanuching];
-    [preDict setValue:[NSNumber numberWithInt:40] forKey:SSTime];
+    [preDict setValue:[NSNumber numberWithLong:40] forKey:SSTime];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults registerDefaults:preDict];
     [[NSUserDefaultsController sharedUserDefaultsController] setInitialValues:preDict];
@@ -48,7 +48,7 @@
     [_stopMenuItem setEnabled:!initStatus];
 }
 
-- (IBAction)startSSTimer:(id)sender
+-(void)showFullScreenWnd
 {
     if (self.pfullScreenWnd == nil)
     {
@@ -56,7 +56,10 @@
     }
     [self.pfullScreenWnd showWindow:nil];
     [NSApp activateIgnoringOtherApps:YES];
-    
+}
+
+- (IBAction)startSSTimer:(id)sender
+{
     [_ssTimer start];
 }
 
@@ -95,7 +98,14 @@
 
 -(void)didChange:(id)sstimer
 {
-    NSLog(@"wyg==>%@", _ssTimer);
+    long seconds = (long)floor([_ssTimer elapseTime]);
+//    seconds /= 60;
+    NSNumber *number = [[NSUserDefaults standardUserDefaults] objectForKey:SSTime];
+    long val = [number longValue];
+    if (val < seconds)
+    {
+        NSLog(@"show full screen");
+    }
 }
 
 -(void)updateStatus
