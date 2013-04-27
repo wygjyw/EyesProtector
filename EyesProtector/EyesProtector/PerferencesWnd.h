@@ -12,5 +12,8 @@ extern NSString * const StartupAtLanuching;
 extern NSString * const SSTime;
 
 @interface PerferencesWnd : NSWindowController
+{
+    
+}
 
 @end

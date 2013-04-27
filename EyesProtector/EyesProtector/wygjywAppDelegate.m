@@ -63,11 +63,8 @@
     {
         self.pwnd = [[PerferencesWnd alloc] initWithWindowNibName:@"PerferencesWnd"];
     }
-    if (self.pwnd)
-    {
-        [self.pwnd showWindow:nil];
-        [NSApp activateIgnoringOtherApps:YES];
-    }
+    [self.pwnd showWindow:nil];
+    [NSApp activateIgnoringOtherApps:YES];
 }
 
 -(void)didStart:(id)sstimer
