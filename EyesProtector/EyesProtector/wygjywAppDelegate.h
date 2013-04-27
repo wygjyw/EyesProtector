@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "SSTimer.h"
 #import "PerferencesWnd.h"
+#import "SSFullScreen.h"
 
 @interface wygjywAppDelegate : NSObject <NSApplicationDelegate, SSTimerDelegate>
 {
@@ -18,6 +19,7 @@
 @property (weak) IBOutlet NSMenu *menu;
 @property (retain) NSStatusItem *statusItem;
 @property (nonatomic, retain) PerferencesWnd *pwnd;
+@property (nonatomic, retain) SSFullScreen *pfullScreenWnd;
 
 
 - (IBAction)startSSTimer:(id)sender;

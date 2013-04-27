@@ -12,6 +12,7 @@
 @implementation wygjywAppDelegate
 @synthesize statusItem = _statusItem;
 @synthesize pwnd = _pwnd;
+@synthesize pfullScreenWnd = _pfullScreenWnd;
 
 -(void)initPreferencesVal
 {
@@ -49,6 +50,13 @@
 
 - (IBAction)startSSTimer:(id)sender
 {
+    if (self.pfullScreenWnd == nil)
+    {
+        self.pfullScreenWnd = [[SSFullScreen alloc] initWithWindowNibName:@"SSFullScreen"];
+    }
+    [self.pfullScreenWnd showWindow:nil];
+    [NSApp activateIgnoringOtherApps:YES];
+    
     [_ssTimer start];
 }
 

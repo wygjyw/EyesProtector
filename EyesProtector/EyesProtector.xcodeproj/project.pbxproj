@@ -19,7 +19,8 @@
 		242AB3811729538400587DD1 /* SSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 242AB3801729538400587DD1 /* SSTimer.m */; };
 		2449AF11172A5E0600F3E9BA /* PerferencesWnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2449AF0F172A5E0600F3E9BA /* PerferencesWnd.m */; };
 		2449AF12172A5E0600F3E9BA /* PerferencesWnd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2449AF10172A5E0600F3E9BA /* PerferencesWnd.xib */; };
-		24747C71172BA9AF007735CB /* SSFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 24747C70172BA9AF007735CB /* SSFullScreen.m */; };
+		24747C7B172BAB07007735CB /* SSFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 24747C79172BAB07007735CB /* SSFullScreen.m */; };
+		24747C7C172BAB07007735CB /* SSFullScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24747C7A172BAB07007735CB /* SSFullScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +45,9 @@
 		2449AF0E172A5E0600F3E9BA /* PerferencesWnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerferencesWnd.h; sourceTree = "<group>"; };
 		2449AF0F172A5E0600F3E9BA /* PerferencesWnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerferencesWnd.m; sourceTree = "<group>"; };
 		2449AF10172A5E0600F3E9BA /* PerferencesWnd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PerferencesWnd.xib; sourceTree = "<group>"; };
-		24747C6F172BA9AF007735CB /* SSFullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFullScreen.h; sourceTree = "<group>"; };
-		24747C70172BA9AF007735CB /* SSFullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFullScreen.m; sourceTree = "<group>"; };
+		24747C78172BAB07007735CB /* SSFullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFullScreen.h; sourceTree = "<group>"; };
+		24747C79172BAB07007735CB /* SSFullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFullScreen.m; sourceTree = "<group>"; };
+		24747C7A172BAB07007735CB /* SSFullScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSFullScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +102,15 @@
 		242AB33A172905BD00587DD1 /* EyesProtector */ = {
 			isa = PBXGroup;
 			children = (
+				24747C78172BAB07007735CB /* SSFullScreen.h */,
+				24747C79172BAB07007735CB /* SSFullScreen.m */,
+				24747C7A172BAB07007735CB /* SSFullScreen.xib */,
 				2449AF0E172A5E0600F3E9BA /* PerferencesWnd.h */,
 				2449AF0F172A5E0600F3E9BA /* PerferencesWnd.m */,
 				2449AF10172A5E0600F3E9BA /* PerferencesWnd.xib */,
 				242AB346172905BD00587DD1 /* wygjywAppDelegate.h */,
 				242AB347172905BD00587DD1 /* wygjywAppDelegate.m */,
 				242AB349172905BE00587DD1 /* MainMenu.xib */,
-				24747C6F172BA9AF007735CB /* SSFullScreen.h */,
-				24747C70172BA9AF007735CB /* SSFullScreen.m */,
 				242AB37F1729538400587DD1 /* SSTimer.h */,
 				242AB3801729538400587DD1 /* SSTimer.m */,
 				242AB33B172905BD00587DD1 /* Supporting Files */,
@@ -204,6 +207,7 @@
 				242AB345172905BD00587DD1 /* Credits.rtf in Resources */,
 				242AB34B172905BE00587DD1 /* MainMenu.xib in Resources */,
 				2449AF12172A5E0600F3E9BA /* PerferencesWnd.xib in Resources */,
+				24747C7C172BAB07007735CB /* SSFullScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +222,7 @@
 				242AB348172905BD00587DD1 /* wygjywAppDelegate.m in Sources */,
 				242AB3811729538400587DD1 /* SSTimer.m in Sources */,
 				2449AF11172A5E0600F3E9BA /* PerferencesWnd.m in Sources */,
-				24747C71172BA9AF007735CB /* SSFullScreen.m in Sources */,
+				24747C7B172BAB07007735CB /* SSFullScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
